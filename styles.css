@@ -1468,6 +1468,7 @@ body{
   }
   
   .home .intro .textelements{
+    margin-top: -10vh;
     position: relative;
     display: flex;
     flex-direction: column;
