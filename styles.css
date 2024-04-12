@@ -30,7 +30,7 @@ body{
 
 .ui-abstergo {
   --primary: var(--design-color);
-  --secondary: rgb(112, 255, 176);
+  --secondary: var(--design-glow);
   --shadow-blur: 3px;
   --text-shadow-blur: 3px;
   --animation-duration: 2s;
