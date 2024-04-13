@@ -290,7 +290,7 @@ body{
   padding: 5vw;
   padding-top: 0;
   height: 7vh;
-  background-color: var(--transparent_background);
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
