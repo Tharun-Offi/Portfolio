@@ -1491,7 +1491,8 @@ body{
   }
   
   .home .intro h1 .text-div{
-    height: 25px;
+    height: 20px;
+    width: 50vw;
   }
   
   .home .intro span{
@@ -1527,6 +1528,7 @@ body{
 
   .home .img-1 .img-content img{
     min-height: 35vh;
+    height: 50vh;
   }
 
   .home .img-1{
