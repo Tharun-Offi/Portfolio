@@ -1161,8 +1161,8 @@ body{
 }
 
 .contact form{
-  width: 30%;
-  height: 70%;
+  width: 30vw;
+  height: 70vh;
   padding: 40px;
   padding-top: 0;
   background: var(--transparent-background);
