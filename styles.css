@@ -2101,7 +2101,7 @@ body{
   }
 }
 
-@media (max-height: 340px) and (orientation: landscape){
+@media (max-height: 700px) and (orientation: landscape){
   .home .intro h1{
     font-size: 30px;
     font-weight: 300;
