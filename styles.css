@@ -1504,13 +1504,9 @@ body{
     width: 100vw;
   }
 
-  .home .img-1 .img-content img{
+  .home .img-1 img{
     min-height: 35vh;
     height: 50vh;
-  }
-
-  .home .img-1{
-    margin-top: 10vh;
   }
   
   .home .img-2{
