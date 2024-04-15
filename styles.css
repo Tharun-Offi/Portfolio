@@ -2124,4 +2124,7 @@ body{
   .home .intro span span{
     font-size: 75px;
   }
+  .home .img{
+    padding-right: 7vw;
+  }
 }
