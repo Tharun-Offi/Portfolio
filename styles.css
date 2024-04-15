@@ -1288,7 +1288,7 @@ body{
   width: 100%;
 }
 
-@media (max-width: 1100px) and (orientation: portrait){
+@media ((max-width: 1100px) and (orientation: portrait)) or ((max-height: 700px) and (orientation: landscape)){
   
   body{
     width: 100%;
@@ -2098,33 +2098,5 @@ body{
     border: none;
     height: 100%;
     width: 100%;
-  }
-}
-
-@media (max-height: 700px) and (orientation: landscape){
-  .home .intro h1{
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff;
-  }
-  
-  .home .intro h1 .text-div{
-    height: 75px;
-  }
-  
-  .home .intro span{
-    font-size: 45px;
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--design-color);
-    font-weight: 400; 
-    text-transform: uppercase;
-    letter-spacing: 0px;
-  }
-  
-  .home .intro span span{
-    font-size: 75px;
-  }
-  .home .img{
-    padding-right: 7vw;
   }
 }
