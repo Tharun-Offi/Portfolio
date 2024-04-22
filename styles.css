@@ -467,6 +467,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   padding-top: 10vh;
+  overflow: hidden;
 }
 
 .home .home-container{
