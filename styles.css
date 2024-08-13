@@ -1292,7 +1292,7 @@ body{
   width: 100%;
 }
 
-@media ((max-width: 1100px) and (orientation: portrait)) or ((max-height: 700px) and (orientation: landscape)){
+@media ((orientation: portrait)) or ((max-height: 700px) and (orientation: landscape)){
   
   body{
     width: 100%;
