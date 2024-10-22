@@ -19,11 +19,11 @@
 
 body{
   width: 100%;
-/*   overflow-x: hidden; */
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
-  overflow-y: hidden;
+/*   overflow-y: hidden; */
 }
 
 /* Loader Starts Here */
