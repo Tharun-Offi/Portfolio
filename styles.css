@@ -1293,7 +1293,7 @@ body{
   width: 100%;
 }
 
-@media only screen and ((max-width: 767px) or (max-height: 767px)){
+@media only screen and (max-width: 767px){
   
   body{
     width: 100%;
