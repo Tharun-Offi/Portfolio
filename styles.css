@@ -287,17 +287,21 @@ body{
   width: 100%;
   position: fixed;
   margin: 0;
-  padding: 2.5vw;
-  height: 3vh;
+  padding: 0 10px;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  transition: background-color 0.5s ease;
+}
+
+.navigation.scrolled {
+  background-color: #000000;
 }
 
 .navigation .text p{
   margin: 0;
-  padding-left: 10px;
   color: white;
   font-size: 30px;
   text-transform: uppercase;
@@ -306,7 +310,7 @@ body{
 
 .navigation .text p span{
   color: var(--design-color);
-  font-size: 50px;
+  /* font-size: 50px; */
 }
 
 .navi-btns{
@@ -324,7 +328,6 @@ body{
   align-items: center;
   position: relative;
   padding: 2vh 1vw;
-  margin-top: 2vh;
   border-radius: 7px;
   border: 1px solid var(--design-color);
   height: 30px;

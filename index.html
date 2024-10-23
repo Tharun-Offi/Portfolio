@@ -283,6 +283,17 @@
     </body>
 
     <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navigation');
+            if (window.scrollY > 250)
+            {
+                navbar.classList.add('scrolled');
+            }
+            else
+            {
+                navbar.classList.remove('scrolled');
+            }
+        });
         ScrollReveal().reveal('.slide-up', {
             distance: '50px',
             origin: 'bottom',
