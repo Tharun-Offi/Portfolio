@@ -878,7 +878,7 @@ body{
 } 
 
 .technical{
-  padding-top: 50px;
+  padding: 50px 0;
   width: 50%;
 }
 
@@ -887,7 +887,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 150px;
+  gap: 7vh;
 }
 
 .container{
@@ -895,7 +895,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -100px;
+  margin-bottom: 0;
 }
 .container .card{
   position: relative;
@@ -1163,7 +1163,8 @@ body{
 
 .contact form{
   width: 30vw;
-  height: 70vh;
+  min-height: min-content;
+  max-height: max-content;
   padding: 40px;
   padding-top: 0;
   background: var(--transparent-background);
@@ -1195,7 +1196,7 @@ body{
 }
 
 .contact form textarea{
-  height: 30%;
+  height: 15vh;
 }
 
 .contact form input, textarea{
