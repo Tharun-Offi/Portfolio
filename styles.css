@@ -1202,6 +1202,7 @@ body{
 
 .contact form textarea{
   height: 15vh;
+  resize: none;
 }
 
 .contact form input, textarea{
@@ -2103,5 +2104,88 @@ body{
     border: none;
     height: 100%;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  
+  .navigation .text p {
+    font-size: 24px; /* Adjust font size for medium screens */
+  }
+
+  .navi-btns button {
+    font-size: 14px; /* Smaller button text */
+  }
+
+  .home .intro h1 {
+    font-size: 40px; /* Smaller heading */
+  }
+
+  .home .intro span {
+    font-size: 60px; /* Smaller span text */
+  }
+
+  .about-container .about-img img {
+    width: 70vw; /* Adjust image size */
+  }
+
+  .project .project-container .card {
+    width: 30vw; /* Adjust card width */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .navigation {
+    flex-direction: row; /* Stack navigation items */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .navigation .navi-btns {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+  }
+
+  .home .intro, .about-container, .skill-container, .project-container, .contact-container {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .home .img img {
+    height: 50vh; /* Adjust image height */
+  }
+
+  .contact form {
+    width: 90%; /* Full width for form */
+  }
+
+  .contact form button {
+    width: 100%; /* Full width for button */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .navigation .text p {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .home .intro h1 {
+    font-size: 30px; /* Smaller heading */
+  }
+
+  .home .intro span {
+    font-size: 40px; /* Smaller span text */
+  }
+
+  .about-container .about-info h2 {
+    font-size: 18px; /* Smaller heading */
+  }
+
+  .about-container .about-info p {
+    font-size: 14px; /* Smaller paragraph text */
+  }
+
+  .project .project-container .card {
+    width: 90%; /* Full width for cards */
   }
 }
