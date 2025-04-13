@@ -893,8 +893,6 @@ body{
   gap: 5vh;
 }
 
-.te
-
 .container{
   position: relative;
   display: flex;
@@ -932,7 +930,7 @@ body{
 .container .card .percent svg circle:nth-child(2){
   stroke: var(--clr);
   stroke-dasharray: 440;
-  stroke-dashoffset: calc(440 - (440 * var(--num))/100);  
+  stroke-dashoffset: calc(440 - (440 * var(--num))/100);
   opacity: 0;
   animation: fadeIn 1s linear forwards;
   animation-delay: 2.5s;
