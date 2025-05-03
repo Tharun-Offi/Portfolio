@@ -2224,6 +2224,15 @@ body{
   .contact form button {
     width: 100%; /* Full width for button */
   }
+
+  .project .project-container .project-cards {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Reduce gap between cards */
+  }
+
+  .project .project-container .card {
+    width: 80%; /* Adjust card width for smaller screens */
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2249,6 +2258,6 @@ body{
   }
 
   .project .project-container .card {
-    width: 90%; /* Full width for cards */
+    width: 90%; /* Full width for very small screens */
   }
 }
