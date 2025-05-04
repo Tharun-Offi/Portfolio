@@ -1098,7 +1098,6 @@ body{
   align-items: center;
   backdrop-filter: blur(10px);
   background-color: var(--container-background);
-  gap: 10vh;
   padding: 20px;
   box-sizing: border-box; 
 }
@@ -1113,11 +1112,12 @@ body{
   flex-wrap: wrap; /* Enable wrapping to the next row */
   justify-content: center; /* Center align cards */
   align-items: center;
-  gap: 10vh; /* Maintain consistent spacing */
+  gap: 5vh; /* Maintain consistent spacing */
   overflow: hidden; /* Prevent overflow issues */
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next row */
   justify-content: center; /* Center align cards */
+  padding: 50px 10px;
 }
 
 .project .project-container .card {
