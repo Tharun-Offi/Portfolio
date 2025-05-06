@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root{
-  --design-color : rgb(0, 157, 230);
-  --design-glow : rgba(0, 205, 255, 0.815);
-  --transparent-background : rgba(0, 0, 0, 0.39);
-  --background-color : black;
-  --container-background : rgba(255,255,255,0.06);
+:root {
+  --design-color: rgb(0, 157, 230);
+  --design-glow: rgba(0, 205, 255, 0.815);
+  --transparent-background: rgba(0, 0, 0, 0.39);
+  --background-color: black;
+  --container-background: rgba(255, 255, 255, 0.06);
 }
 
-*{
+* {
   text-decoration: none;
   box-sizing: border-box;
   background: transparent;
@@ -17,13 +17,13 @@
   color: #fff;
 }
 
-body{
+body {
   width: 100%;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
-/*   overflow-y: hidden; */
+  /*   overflow-y: hidden; */
 }
 
 /* Loader Starts Here */
@@ -156,6 +156,7 @@ body{
 }
 
 @-webkit-keyframes line1 {
+
   0%,
   40% {
     top: 27px;
@@ -172,6 +173,7 @@ body{
 }
 
 @keyframes line1 {
+
   0%,
   40% {
     top: 27px;
@@ -188,6 +190,7 @@ body{
 }
 
 @-webkit-keyframes line2 {
+
   0%,
   40% {
     bottom: 2px;
@@ -204,6 +207,7 @@ body{
 }
 
 @keyframes line2 {
+
   0%,
   40% {
     bottom: 2px;
@@ -220,6 +224,7 @@ body{
 }
 
 @-webkit-keyframes line3 {
+
   0%,
   40% {
     bottom: 16px;
@@ -236,6 +241,7 @@ body{
 }
 
 @keyframes line3 {
+
   0%,
   40% {
     bottom: 16px;
@@ -260,7 +266,8 @@ body{
     background-color: var(--primary);
   }
 
-  70%, 100% {
+  70%,
+  100% {
     background-color: white;
   }
 }
@@ -274,7 +281,8 @@ body{
     background-color: var(--primary);
   }
 
-  70%, 100% {
+  70%,
+  100% {
     background-color: white;
   }
 }
@@ -283,7 +291,7 @@ body{
 
 /* Navigation Starts Here */
 
-.navigation{
+.navigation {
   width: 100%;
   position: fixed;
   margin: 0;
@@ -300,7 +308,7 @@ body{
   background-color: #000000;
 }
 
-.navigation .text p{
+.navigation .text p {
   margin: 0;
   color: white;
   font-size: 30px;
@@ -308,18 +316,18 @@ body{
   letter-spacing: 2px;
 }
 
-.navigation .text p span{
+.navigation .text p span {
   color: var(--design-color);
   /* font-size: 50px; */
 }
 
-.navi-btns{
-    float: right;
-    list-style: none;
-    color: white;
-    display: flex;
-    gap: 2.5vw;
-    margin-right: 15px;
+.navi-btns {
+  float: right;
+  list-style: none;
+  color: white;
+  display: flex;
+  gap: 2.5vw;
+  margin-right: 15px;
 }
 
 .navi-btns button {
@@ -400,7 +408,7 @@ body{
   transition: box-shadow 0.2s ease-in;
 }
 
-.navigation .menuicon{
+.navigation .menuicon {
   display: none;
   justify-self: center;
   align-items: center;
@@ -409,7 +417,7 @@ body{
   padding-top: 20px;
 }
 
-.menu{
+.menu {
   z-index: 100;
   margin: 0;
   padding: 30px;
@@ -425,7 +433,8 @@ body{
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.menu a,.menu button{
+.menu a,
+.menu button {
   font-size: 30px;
   width: 100vw;
   height: 10vh;
@@ -438,34 +447,44 @@ body{
   transition: 0.35s ease-in;
 }
 
-.menu button svg{
-  fill: white;  
+.menu button svg {
+  fill: white;
 }
 
-.menu button:hover{
-  svg{
+.menu button:hover {
+  svg {
     fill: black;
   }
+
   background-color: white;
   color: black;
 }
 
 /* Navigation ends Here */
 
-.home, .about, .skill, .project, .contact{
+.home,
+.about,
+.skill,
+.project,
+.contact {
   height: 100%;
   min-height: 100vh;
   width: 100%;
 }
 
-.home, .about, .skill, .contact {
-  min-height: 100vh; /* Minimum height is 100% of the viewport */
-  height: auto; /* Allow height to extend if needed */
+.home,
+.about,
+.skill,
+.contact {
+  min-height: 100vh;
+  /* Minimum height is 100% of the viewport */
+  height: auto;
+  /* Allow height to extend if needed */
 }
 
 /* Home Section Starts Here */
 
-.home{
+.home {
   height: 100%;
   min-height: 70vh;
   display: flex;
@@ -478,7 +497,7 @@ body{
   overflow: hidden;
 }
 
-.home .home-container{
+.home .home-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -487,12 +506,13 @@ body{
   backdrop-filter: blur(10px);
 }
 
-.home .intro, .img{
+.home .intro,
+.img {
   width: 50vw;
   height: 70vh;
 }
 
-.home .intro{
+.home .intro {
   margin: 0;
   display: flex;
   justify-content: start;
@@ -500,13 +520,13 @@ body{
   padding-left: 10vw;
 }
 
-.home .intro .head .btns{
+.home .intro .head .btns {
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
-.home .intro .head button{
+.home .intro .head button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -528,7 +548,7 @@ body{
   transition: all 0.2s ease-in;
 }
 
-.home .intro .head button:hover{
+.home .intro .head button:hover {
   color: #000;
   background: var(--design-color);
   box-shadow: 0 0 30px 5px var(--design-glow);
@@ -568,7 +588,7 @@ body{
   transition: box-shadow 0.2s ease-in;
 }
 
-.social-Media{
+.social-Media {
   width: fit-content;
   height: fit-content;
   background-color: transparent;
@@ -591,24 +611,28 @@ body{
   overflow: hidden;
   transition-duration: .3s;
 }
+
 /* instagram*/
 .containerOne:hover {
   box-shadow: 0 0 30px 5px #d62976;
   background-color: #d62976;
   transition-duration: .3s;
 }
+
 /* twitter*/
 .containerTwo:hover {
   box-shadow: 0 0 30px 5px #00acee;
   background-color: #00acee;
   transition-duration: .3s;
 }
+
 /* linkdin*/
 .containerThree:hover {
   box-shadow: 0 0 30px 5px #0072b1;
   background-color: #0072b1;
   transition-duration: .3s;
 }
+
 /* Whatsapp*/
 .containerFour:hover {
   box-shadow: 0 0 30px 5px #128C7E;
@@ -645,55 +669,55 @@ body{
   }
 }
 
-.home .intro .textelements{
+.home .intro .textelements {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.home .intro h1{
+.home .intro h1 {
   font-size: 50px;
   font-weight: 300;
   color: #fff;
 }
 
-.home .intro h1 .text-div{
+.home .intro h1 .text-div {
   height: 100px;
 }
 
-.home .intro span{
+.home .intro span {
   font-size: 70px;
   font-family: 'Times New Roman', Times, serif;
   color: var(--design-color);
-  font-weight: 400; 
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0px;
 }
 
-.home .intro span span{
+.home .intro span span {
   font-size: 100px;
 }
 
-.home .intro .home-btns{
+.home .intro .home-btns {
   display: flex;
   padding: 10px;
   border: 0.2px solid var(--design-color);
 }
 
-.home .img{
+.home .img {
   display: flex;
   justify-content: end;
   align-items: center;
   padding-right: 15vw;
 }
 
-.home .img img{
+.home .img img {
   position: relative;
   height: 65vh;
   filter: brightness(90%) contrast(110%) saturate(120%);
 }
 
-.home .img-1{
+.home .img-1 {
   display: none;
 }
 
@@ -783,7 +807,7 @@ body{
 
 /* About Section Starts Here */
 
-.about{
+.about {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -793,7 +817,7 @@ body{
   background-attachment: fixed;
 }
 
-.about-container{
+.about-container {
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -804,7 +828,7 @@ body{
   align-items: center;
 }
 
-.about-container .about-img{
+.about-container .about-img {
   width: 35%;
   height: 100%;
   /* border: 0.2px solid white; */
@@ -813,7 +837,7 @@ body{
   align-items: center;
 }
 
-.about-container .about-img img{
+.about-container .about-img img {
   width: 50vw;
   max-width: 80%;
   border-radius: 50%;
@@ -822,7 +846,7 @@ body{
   filter: brightness(80%) contrast(120%) saturate(120%);
 }
 
-.about-container .about-info{
+.about-container .about-info {
   width: 65%;
   height: 100%;
   padding: 5vw;
@@ -833,12 +857,12 @@ body{
   /* border: 0.2px solid white; */
 }
 
-.about-container .about-info h2{
+.about-container .about-info h2 {
   text-transform: uppercase;
   font-size: 2rem;
 }
 
-.about-container .about-info p{
+.about-container .about-info p {
   font-size: 1rem;
   font-weight: 400;
   text-align: justify;
@@ -848,7 +872,7 @@ body{
 
 /* Skills Section starts Here */
 
-.skill{
+.skill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -857,7 +881,7 @@ body{
   background-attachment: fixed;
 }
 
-.skill .skill-container{
+.skill .skill-container {
   height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -869,38 +893,48 @@ body{
   padding: 10px;
 }
 
-.coding{
+.coding {
   width: 50%;
   height: 100%;
   padding: 50px 30px;
   background: transparent;
 }
 
-.coding *{
+.coding * {
   color: #ffffff;
   font-weight: 500;
 }
-.coding h2{
+
+.coding h2 {
   margin-bottom: 15vh;
 }
-.coding h2, .technical h2{
+
+.coding h2,
+.technical h2 {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 500;
 }
-.skills, .details, .skills span, .container h2{
+
+.skills,
+.details,
+.skills span,
+.container h2 {
   background: transparent;
 }
-.skills:not(:last-child){
+
+.skills:not(:last-child) {
   margin-bottom: 30px;
 }
-.details{
+
+.details {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.bar{
+
+.bar {
   position: relative;
   background-color: var(--container-background);
   border: 1px solid var(--container-background);
@@ -908,7 +942,8 @@ body{
   border-radius: 20px;
   backdrop-filter: blur(10px);
 }
-.bar div{
+
+.bar div {
   position: relative;
   width: 0;
   height: 5px;
@@ -917,45 +952,53 @@ body{
   border: 1px solid var(--design-color);
   box-shadow: 0 0 5px var(--design-glow);
 }
-#python-bar{
+
+#python-bar {
   animation: html-fill 2s forwards;
 }
-@keyframes python-fill{
-  100%{
-      width: 90%;
+
+@keyframes python-fill {
+  100% {
+    width: 90%;
   }
 }
-#html-bar{
+
+#html-bar {
   animation: html-fill 2s forwards;
 }
-@keyframes html-fill{
-  100%{
-      width: 90%;
+
+@keyframes html-fill {
+  100% {
+    width: 90%;
   }
 }
-#css-bar{
+
+#css-bar {
   animation: css-fill 2s forwards;
 }
-@keyframes css-fill{
-  100%{
-      width: 75%;
+
+@keyframes css-fill {
+  100% {
+    width: 75%;
   }
 }
-#js-bar{
+
+#js-bar {
   animation: js-fill 2s forwards;
 }
-@keyframes js-fill {
-  100%{
-      width: 65%;
-  }
-} 
 
-.technical{
+@keyframes js-fill {
+  100% {
+    width: 65%;
+  }
+}
+
+.technical {
   padding: 5vh 10vw;
   width: 50%;
 }
 
-.technical-progress{
+.technical-progress {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -963,14 +1006,15 @@ body{
   gap: 5vh;
 }
 
-.container{
+.container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
 }
-.container .card{
+
+.container .card {
   position: relative;
   width: 220px;
   height: 250px;
@@ -978,18 +1022,21 @@ body{
   justify-content: center;
   align-items: center;
 }
-.container .card .percent{
+
+.container .card .percent {
   position: relative;
   width: 150px;
   height: 150px;
 }
-.container .card .percent svg{
+
+.container .card .percent svg {
   position: relative;
   width: 150px;
   height: 150px;
   transform: rotate(270deg);
 }
-.container .card .percent svg circle{
+
+.container .card .percent svg circle {
   width: 100%;
   height: 100%;
   fill: transparent;
@@ -997,7 +1044,8 @@ body{
   stroke: #191919;
   transform: translate(5px, 5px);
 }
-.container .card .percent svg circle:nth-child(2){
+
+.container .card .percent svg circle:nth-child(2) {
   stroke: var(--clr);
   stroke-dasharray: 440;
   stroke-dashoffset: calc(440 - (440 * var(--num))/100);
@@ -1005,29 +1053,35 @@ body{
   animation: fadeIn 1s linear forwards;
   animation-delay: 2.5s;
 }
+
 @keyframes fadeIn {
-  0%{
-      opacity: 0;
+  0% {
+    opacity: 0;
   }
-  100%{
-      opacity: 1;
+
+  100% {
+    opacity: 1;
   }
 }
-.dot{
+
+.dot {
   position: absolute;
   inset: 5px;
   z-index: 10;
   animation: animateDot 2s linear forwards;
 }
+
 @keyframes animateDot {
-  0%{
-      transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
   }
-  100%{
-      transform: rotate(calc(3.6deg * var(--num)));
+
+  100% {
+    transform: rotate(calc(3.6deg * var(--num)));
   }
 }
-.dot::before{
+
+.dot::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -1039,7 +1093,8 @@ body{
   background: var(--clr);
   box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
 }
-.number{
+
+.number {
   position: absolute;
   inset: 0;
   display: flex;
@@ -1051,7 +1106,8 @@ body{
   animation-delay: 2.5s;
   /* border: 0.2px solid white; */
 }
-.number h2{
+
+.number h2 {
   /* border: 0.2px solid white; */
   display: flex;
   justify-content: center;
@@ -1061,12 +1117,14 @@ body{
   font-size: 2.5em;
   margin-top: 75px;
 }
-.number h2 span{
+
+.number h2 span {
   font-weight: 300;
   color: #fff;
   font-size: 0.5em;
 }
-.number p{
+
+.number p {
   /* border: 0.2px solid white; */
   font-weight: 300;
   font-size: 0.75em;
@@ -1080,18 +1138,21 @@ body{
 
 /* Project Sewction starts here */
 
-.project{
+.project {
   background: url(resources/project.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
-.project .project-container{
-  min-height: 100vh; /* Minimum height is 100% of the viewport */
-  height: auto; /* Allow height to extend if needed */
+.project .project-container {
+  min-height: 100vh;
+  /* Minimum height is 100% of the viewport */
+  height: auto;
+  /* Allow height to extend if needed */
   width: 100%;
   padding-top: 10vh;
-  padding: 0 20px; /* Add horizontal padding to prevent cards from touching the edges */
+  padding: 0 20px;
+  /* Add horizontal padding to prevent cards from touching the edges */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1099,24 +1160,30 @@ body{
   backdrop-filter: blur(10px);
   background-color: var(--container-background);
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.project .project-container h2{
+.project .project-container h2 {
   text-transform: uppercase;
   font-size: 40px;
 }
 
-.project .project-container .project-cards{
+.project .project-container .project-cards {
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping to the next row */
-  justify-content: center; /* Center align cards */
+  flex-wrap: wrap;
+  /* Enable wrapping to the next row */
+  justify-content: center;
+  /* Center align cards */
   align-items: center;
-  gap: 5vh; /* Maintain consistent spacing */
-  overflow: hidden; /* Prevent overflow issues */
+  gap: 5vh;
+  /* Maintain consistent spacing */
+  overflow: hidden;
+  /* Prevent overflow issues */
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to the next row */
-  justify-content: center; /* Center align cards */
+  flex-wrap: wrap;
+  /* Allow cards to wrap to the next row */
+  justify-content: center;
+  /* Center align cards */
   padding: 50px 10px;
 }
 
@@ -1164,7 +1231,7 @@ body{
   width: 100%;
 }
 
-.card__img img{
+.card__img img {
   width: 100%;
   border-radius: 15px;
 }
@@ -1197,7 +1264,9 @@ body{
   fill: var(--main-color);
 }
 
-.card__icon circle, polyline, line {
+.card__icon circle,
+polyline,
+line {
   stroke: var(--main-color);
 }
 
@@ -1205,7 +1274,9 @@ body{
   transform: rotate(0);
 }
 
-.project .project-container .card:hover .card__icon circle, .project .project-container .card:hover .card__icon polyline, .project .project-container .card:hover .card__icon line {
+.project .project-container .card:hover .card__icon circle,
+.project .project-container .card:hover .card__icon polyline,
+.project .project-container .card:hover .card__icon line {
   stroke: var(--accent-color);
 }
 
@@ -1226,13 +1297,13 @@ body{
 
 /* Contact Section Start Here */
 
-.contact{
+.contact {
   background: url(resources/contact-me.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
-.contact-container{
+.contact-container {
   width: 100vw;
   max-height: max-content;
   min-height: 100vh;
@@ -1243,7 +1314,7 @@ body{
   background-color: var(--container-background);
 }
 
-.contact form{
+.contact form {
   width: 30vw;
   min-height: min-content;
   max-height: max-content;
@@ -1258,31 +1329,32 @@ body{
   justify-content: center;
 }
 
-.contact form h2{
+.contact form h2 {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.contact form label{
+.contact form label {
   margin-top: 20px;
   letter-spacing: 0.5px;
   font-weight: 500;
   font-size: 20px;
 }
 
-.contact form input{
+.contact form input {
   height: 35px;
   width: 100%;
 }
 
-.contact form textarea{
+.contact form textarea {
   height: 15vh;
   resize: none;
 }
 
-.contact form input, textarea{
+.contact form input,
+textarea {
   margin-top: 10px;
   border-radius: 5px;
   outline: none;
@@ -1293,7 +1365,7 @@ body{
   font-size: 15px;
 }
 
-.contact form button{
+.contact form button {
   margin-top: 25px;
   padding: 0;
   height: 70%;
@@ -1362,7 +1434,7 @@ body{
   transition: box-shadow 0.2s ease-in;
 }
 
-.contact form button .submit{
+.contact form button .submit {
   padding: 0;
   margin: 0;
   display: flex;
@@ -1376,9 +1448,22 @@ body{
   width: 100%;
 }
 
-@media only screen and (max-width: 767px){
-  
-  body{
+.form-status {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f0f4f8;
+  border: 1px solid #d0d7de;
+  border-radius: 5px;
+  color: #24292e;
+  z-index: 10;
+  position: absolute;
+  top: 15vh;
+}
+
+@media only screen and (max-width: 767px) {
+
+  body {
     width: 100%;
     overflow-x: scroll;
     overflow-y: scroll;
@@ -1387,44 +1472,52 @@ body{
     background-color: var(--background-color);
   }
 
-  .navigation{
+  .navigation {
     margin: 0;
     padding: 0;
     height: 60px;
     background-color: black;
   }
 
-  .navigation .text{
+  .navigation .text {
     margin: 0;
     padding: 0;
   }
 
-  .navigation .navi-btns{
+  .navigation .navi-btns {
     display: none;
   }
 
-  .navigation .menuicon{
+  .navigation .menuicon {
     display: flex;
   }
 
-  .navigation .menu{
+  .navigation .menu {
     display: block;
     transition: 0.5s ease-in-out;
   }
-  
-  .home, .about, .skill, .project, .contact{
+
+  .home,
+  .about,
+  .skill,
+  .project,
+  .contact {
     width: 100vw;
     min-height: 100vh;
     height: fit-content;
     overflow: hidden;
   }
 
-  .home-container, .about-container, .skill-container, .project-container, .contact-container{
+  .home-container,
+  .about-container,
+  .skill-container,
+  .project-container,
+  .contact-container {
     padding: 50px;
   }
-  
 
-  .home{
+
+  .home {
     height: 100%;
     position: relative;
     display: flex;
@@ -1433,8 +1526,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
   }
-  
-  .home .home-container{
+
+  .home .home-container {
     padding: 0;
     width: 100%;
     height: 100%;
@@ -1444,8 +1537,8 @@ body{
     align-items: center;
     backdrop-filter: blur(10px);
   }
-  
-  .home .intro{
+
+  .home .intro {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -1453,30 +1546,32 @@ body{
     display: flex;
     align-items: center;
   }
-  
-  .home .intro{
+
+  .home .intro {
     margin: 0;
     padding: 0;
     justify-content: start;
   }
-  
-  .home .intro .head h1{
+
+  .home .intro .head h1 {
     padding-left: 5vw;
   }
 
-  .home .intro .head, h1, span span{
+  .home .intro .head,
+  h1,
+  span span {
     width: 100vw;
   }
-  
-  .home .intro .head .btns{
+
+  .home .intro .head .btns {
     margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
   }
-  
-  .home .intro .head button{
+
+  .home .intro .head button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1497,8 +1592,8 @@ body{
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
-  
-  .home .intro .head button:hover{
+
+  .home .intro .head button:hover {
     color: #000;
     background: var(--design-color);
     box-shadow: 0 0 30px 5px var(--design-glow);
@@ -1506,13 +1601,13 @@ body{
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
-  
+
   .home .intro .head button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
   }
-  
+
   .home .intro .head button::before {
     content: '';
     display: block;
@@ -1530,15 +1625,15 @@ body{
     -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
   }
-  
+
   .home .intro .head button:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  
-  .home .intro .textelements{
+
+  .home .intro .textelements {
     margin-top: -10vh;
     position: relative;
     display: flex;
@@ -1546,40 +1641,40 @@ body{
     justify-content: center;
     align-items: center;
   }
-  
-  .home .intro h1{
+
+  .home .intro h1 {
     font-size: 30px;
     font-weight: 300;
     color: #fff;
   }
-  
-  .home .intro h1 .text-div{
+
+  .home .intro h1 .text-div {
     height: 20px;
     width: 50vw;
   }
-  
-  .home .intro span{
+
+  .home .intro span {
     font-size: 45px;
     font-family: 'Times New Roman', Times, serif;
     color: var(--design-color);
-    font-weight: 300; 
+    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0px;
   }
-  
-  .home .intro span span{
+
+  .home .intro span span {
     font-size: 70px;
   }
-  
-  .home .intro .home-btns{
+
+  .home .intro .home-btns {
     width: 100%;
     display: flex;
     padding: 10px;
     border: 0.2px solid var(--design-color);
   }
 
-  
-  .home .img-1{
+
+  .home .img-1 {
     margin: 0;
     padding: 0;
     min-height: 35vh;
@@ -1590,22 +1685,22 @@ body{
     width: 100vw;
   }
 
-  .home .img-1 img{
+  .home .img-1 img {
     min-height: 35vh;
     height: 50vh;
   }
-  
-  .home .img-2{
+
+  .home .img-2 {
     display: none;
-  } 
-  
+  }
+
   .custom-shape-divider-bottom-1712464009 svg {
     display: none;
   }
 
   /* About */
 
-  .about{
+  .about {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -1617,8 +1712,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
   }
-  
-  .about-container{
+
+  .about-container {
     margin: 0;
     width: 100%;
     min-height: 100vh;
@@ -1631,16 +1726,16 @@ body{
     align-items: center;
     flex-direction: column;
   }
-  
-  .about-container .about-img{
+
+  .about-container .about-img {
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .about-container .about-img img{
+
+  .about-container .about-img img {
     height: auto;
     width: 60vw;
     max-width: 250px;
@@ -1650,8 +1745,8 @@ body{
     box-shadow: 0 0 30px 10px var(--design-glow);
     filter: brightness(80%) contrast(120%) saturate(120%);
   }
-  
-  .about-container .about-info{
+
+  .about-container .about-info {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1659,13 +1754,13 @@ body{
     align-items: start;
     flex-direction: column;
   }
-  
-  .about-container .about-info h2{
+
+  .about-container .about-info h2 {
     text-transform: uppercase;
     font-size: 20px;
   }
-  
-  .about-container .about-info p{
+
+  .about-container .about-info p {
     font-size: 15px;
     font-weight: 400;
     overflow: scroll;
@@ -1674,7 +1769,7 @@ body{
 
   /* Skill */
 
-  .skill{
+  .skill {
     margin: 0;
     padding: 0;
     display: flex;
@@ -1685,8 +1780,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
   }
-  
-  .skill .skill-container{
+
+  .skill .skill-container {
     padding: 10px;
     width: 100%;
     min-height: 100vh;
@@ -1700,38 +1795,46 @@ body{
     backdrop-filter: blur(10px);
     padding: 10px;
   }
-  
-  .coding{
+
+  .coding {
     width: 100%;
     height: 100%;
     padding: 50px 30px;
     background: transparent;
   }
-  
-  .coding *{
+
+  .coding * {
     color: #ffffff;
     font-weight: 500;
   }
-  
-  .coding h2, .technical h2{
+
+  .coding h2,
+  .technical h2 {
     margin-bottom: 10vw;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 500;
   }
-  .skills, .details, .skills span, .container h2{
+
+  .skills,
+  .details,
+  .skills span,
+  .container h2 {
     background: transparent;
   }
-  .skills:not(:last-child){
+
+  .skills:not(:last-child) {
     margin-bottom: 30px;
   }
-  .details{
+
+  .details {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .bar{
+
+  .bar {
     position: relative;
     background-color: var(--container-background);
     border: 1px solid var(--container-background);
@@ -1739,7 +1842,8 @@ body{
     border-radius: 20px;
     backdrop-filter: blur(10px);
   }
-  .bar div{
+
+  .bar div {
     position: relative;
     width: 0;
     height: 5px;
@@ -1748,62 +1852,71 @@ body{
     border: 1px solid var(--design-color);
     box-shadow: 0 0 5px var(--design-glow);
   }
-  #python-bar{
+
+  #python-bar {
     animation: html-fill 2s forwards;
   }
-  @keyframes python-fill{
-    100%{
-        width: 90%;
+
+  @keyframes python-fill {
+    100% {
+      width: 90%;
     }
   }
-  #html-bar{
+
+  #html-bar {
     animation: html-fill 2s forwards;
   }
-  @keyframes html-fill{
-    100%{
-        width: 90%;
+
+  @keyframes html-fill {
+    100% {
+      width: 90%;
     }
   }
-  #css-bar{
+
+  #css-bar {
     animation: css-fill 2s forwards;
   }
-  @keyframes css-fill{
-    100%{
-        width: 75%;
+
+  @keyframes css-fill {
+    100% {
+      width: 75%;
     }
   }
-  #js-bar{
+
+  #js-bar {
     animation: js-fill 2s forwards;
   }
+
   @keyframes js-fill {
-    100%{
-        width: 65%;
+    100% {
+      width: 65%;
     }
-  } 
-  
-  .technical{
+  }
+
+  .technical {
     padding-top: 30px;
     width: 100%;
     height: max-content;
-    margin-bottom:  100px;
+    margin-bottom: 100px;
   }
-  
-  .technical-progress{
+
+  .technical-progress {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
   }
-  
-  .container{
+
+  .container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: -100px;
   }
-  .container .card{
+
+  .container .card {
     position: relative;
     width: 220px;
     height: 250px;
@@ -1811,18 +1924,21 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .container .card .percent{
+
+  .container .card .percent {
     position: relative;
     width: 150px;
     height: 150px;
   }
-  .container .card .percent svg{
+
+  .container .card .percent svg {
     position: relative;
     width: 150px;
     height: 150px;
     transform: rotate(270deg);
   }
-  .container .card .percent svg circle{
+
+  .container .card .percent svg circle {
     width: 100%;
     height: 100%;
     fill: transparent;
@@ -1830,21 +1946,24 @@ body{
     stroke: #191919;
     transform: translate(5px, 5px);
   }
-  .container .card .percent svg circle:nth-child(2){
+
+  .container .card .percent svg circle:nth-child(2) {
     stroke: var(--clr);
     stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * var(--num))/100);  
+    stroke-dashoffset: calc(440 - (440 * var(--num))/100);
     opacity: 0;
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
   }
-  .dot{
+
+  .dot {
     position: absolute;
     inset: 5px;
     z-index: 10;
     animation: animateDot 2s linear forwards;
   }
-  .dot::before{
+
+  .dot::before {
     content: "";
     position: absolute;
     top: -5px;
@@ -1856,7 +1975,8 @@ body{
     background: var(--clr);
     box-shadow: 0 0 10px var (--clr), 0 0 30px var(--clr);
   }
-  .number{
+
+  .number {
     position: absolute;
     inset: 0;
     display: flex;
@@ -1867,7 +1987,8 @@ body{
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
   }
-  .number h2{
+
+  .number h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1876,12 +1997,14 @@ body{
     font-size: 2.5em;
     margin-top: 75px;
   }
-  .number h2 span{
+
+  .number h2 span {
     font-weight: 300;
     color: #fff;
     font-size: 0.5em;
   }
-  .number p{
+
+  .number p {
     font-weight: 300;
     font-size: 0.75em;
     letter-spacing: 2px;
@@ -1892,7 +2015,7 @@ body{
 
   /* Project */
 
-  .project{
+  .project {
     margin: 0;
     padding: 0;
     background: url(resources/project.jpg);
@@ -1900,8 +2023,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
   }
-  
-  .project .project-container{
+
+  .project .project-container {
     width: 100%;
     min-height: 100vh;
     max-height: 100%;
@@ -1914,13 +2037,13 @@ body{
     background-color: var(--container-background);
     gap: 10vh;
   }
-  
-  .project .project-container h2{
+
+  .project .project-container h2 {
     text-transform: uppercase;
     font-size: 40px;
   }
-  
-  .project .project-container .project-cards{
+
+  .project .project-container .project-cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1928,7 +2051,7 @@ body{
     margin-bottom: 50px;
     gap: 50px;
   }
-  
+
   .project .project-container .card {
     --main-color: #dedede;
     --sub-color: #ccc;
@@ -1947,7 +2070,7 @@ body{
     cursor: pointer;
     box-shadow: 0px 0px 5px -1.5px #000;
   }
-  
+
   .project .project-container .card::before {
     content: '';
     width: 99%;
@@ -1960,87 +2083,91 @@ body{
     border-radius: 25px;
     transition: all 0.3s;
   }
-  
+
   .card__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .card__img {
     width: 100%;
   }
-  
-  .card__img img{
+
+  .card__img img {
     width: 100%;
     border-radius: 15px;
   }
-  
+
   .card__title {
     color: var(--main-color);
     font-weight: 900;
     font-size: 20px;
   }
-  
+
   .card__subtitle {
     color: var(--sub-color);
     font-weight: 600;
     font-size: 20px;
   }
-  
+
   .card__icon {
     width: 40px;
     height: 40px;
     transform: rotate(-45deg);
     transition: all 0.3s;
   }
-  
+
   .card__icon svg {
     width: 100%;
     height: 100%;
   }
-  
+
   .card__icon g {
     fill: var(--main-color);
   }
-  
-  .card__icon circle, polyline, line {
+
+  .card__icon circle,
+  polyline,
+  line {
     stroke: var(--main-color);
   }
-  
+
   .project .project-container .card:hover .card__icon {
     transform: rotate(0);
   }
-  
-  .project .project-container .card:hover .card__icon circle, .project .project-container .card:hover .card__icon polyline, .project .project-container .card:hover .card__icon line {
+
+  .project .project-container .card:hover .card__icon circle,
+  .project .project-container .card:hover .card__icon polyline,
+  .project .project-container .card:hover .card__icon line {
     stroke: var(--accent-color);
   }
-  
+
   .project .project-container .card:hover .card__icon g {
     fill: var(--accent-color);
   }
-  
+
   .project .project-container .card:hover {
     box-shadow: 0px 0px 20px -5px #000;
   }
-  
+
   .project .project-container .card:hover::before {
     transform: rotate(10deg);
     box-shadow: 0px 0px 20px -5px #000;
   }
 
   /* Contact */
-  
-  .contact{
+
+  .contact {
     background: url(resources/contact-me.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
   }
-  
-  .contact-container{
+
+  .contact-container {
     padding: 25px;
     width: 100%;
     height: 100%;
@@ -2051,8 +2178,8 @@ body{
     backdrop-filter: blur(10px);
     background-color: var(--container-background);
   }
-  
-  .contact form{
+
+  .contact form {
     width: 100%;
     height: 70%;
     padding: 30px;
@@ -2065,31 +2192,32 @@ body{
     flex-direction: column;
     justify-content: center;
   }
-  
-  .contact form h2{
+
+  .contact form h2 {
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 400;
     margin-bottom: 5px;
   }
-  
-  .contact form label{
+
+  .contact form label {
     margin-top: 20px;
     letter-spacing: 0.5px;
     font-weight: 300;
     font-size: 15px;
   }
-  
-  .contact form input{
+
+  .contact form input {
     height: 30px;
     width: 100%;
   }
-  
-  .contact form textarea{
+
+  .contact form textarea {
     height: 30%;
   }
-  
-  .contact form input, textarea{
+
+  .contact form input,
+  textarea {
     margin-top: 10px;
     border-radius: 5px;
     outline: none;
@@ -2099,8 +2227,8 @@ body{
     font-weight: 600;
     font-size: 15px;
   }
-  
-  .contact form button{
+
+  .contact form button {
     margin-top: 25px;
     padding: 0;
     height: 50%;
@@ -2128,7 +2256,7 @@ body{
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
-  
+
   .contact form button:hover {
     color: #000;
     background: var(--design-color);
@@ -2137,13 +2265,13 @@ body{
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
-  
+
   .contact form button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
   }
-  
+
   .contact form button::before {
     content: '';
     display: block;
@@ -2161,15 +2289,15 @@ body{
     -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
   }
-  
+
   .contact form button:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  
-  .contact form button .submit{
+
+  .contact form button .submit {
     padding: 0;
     margin: 0;
     display: flex;
@@ -2187,211 +2315,272 @@ body{
 /* Responsive adjustments for medium screens (max-width: 1200px) */
 @media only screen and (max-width: 1200px) {
   .navigation .text p {
-    font-size: 24px; /* Adjust font size for medium screens */
+    font-size: 24px;
+    /* Adjust font size for medium screens */
   }
 
   .navi-btns button {
-    font-size: 14px; /* Smaller button text */
+    font-size: 14px;
+    /* Smaller button text */
   }
 
   .home .intro h1 {
-    font-size: 40px; /* Smaller heading */
+    font-size: 40px;
+    /* Smaller heading */
   }
 
   .home .intro span {
-    font-size: 60px; /* Smaller span text */
+    font-size: 60px;
+    /* Smaller span text */
   }
 
   .about-container .about-img img {
-    width: 70vw; /* Adjust image size */
+    width: 70vw;
+    /* Adjust image size */
   }
 
   .project .project-container .card {
-    width: 30%; /* Adjust card width */
+    width: 30%;
+    /* Adjust card width */
   }
 }
 
 /* Responsive adjustments for tablets (max-width: 768px) */
 @media only screen and (max-width: 768px) {
   .navigation {
-    flex-direction: column; /* Stack navigation items */
-    height: auto; /* Allow height to adjust */
+    flex-direction: column;
+    /* Stack navigation items */
+    height: auto;
+    /* Allow height to adjust */
   }
 
   .navigation .navi-btns {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Space between buttons */
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 10px;
+    /* Space between buttons */
   }
 
-  .home .intro, .about-container, .skill-container, .project-container, .contact-container {
-    padding: 20px; /* Reduce padding */
+  .home .intro,
+  .about-container,
+  .skill-container,
+  .project-container,
+  .contact-container {
+    padding: 20px;
+    /* Reduce padding */
   }
 
   .home .img img {
-    height: 50vh; /* Adjust image height */
+    height: 50vh;
+    /* Adjust image height */
   }
 
   .contact form {
-    width: 90%; /* Full width for form */
+    width: 90%;
+    /* Full width for form */
   }
 
   .contact form button {
-    width: 100%; /* Full width for button */
+    width: 100%;
+    /* Full width for button */
   }
 
   .project .project-container .project-cards {
-    flex-direction: column; /* Stack cards vertically */
-    gap: 20px; /* Reduce gap between cards */
+    flex-direction: column;
+    /* Stack cards vertically */
+    gap: 20px;
+    /* Reduce gap between cards */
   }
 
   .project .project-container .card {
-    width: 80%; /* Adjust card width for smaller screens */
+    width: 80%;
+    /* Adjust card width for smaller screens */
   }
 }
 
 /* Responsive adjustments for small screens (max-width: 480px) */
 @media only screen and (max-width: 480px) {
   .navigation .text p {
-    font-size: 20px; /* Further reduce font size */
+    font-size: 20px;
+    /* Further reduce font size */
   }
 
   .home .intro h1 {
-    font-size: 30px; /* Smaller heading */
+    font-size: 30px;
+    /* Smaller heading */
   }
 
   .home .intro span {
-    font-size: 40px; /* Smaller span text */
+    font-size: 40px;
+    /* Smaller span text */
   }
 
   .about-container .about-info h2 {
-    font-size: 18px; /* Smaller heading */
+    font-size: 18px;
+    /* Smaller heading */
   }
 
   .about-container .about-info p {
-    font-size: 14px; /* Smaller paragraph text */
+    font-size: 14px;
+    /* Smaller paragraph text */
   }
 
   .project .project-container .card {
-    width: 90%; /* Full width for very small screens */
+    width: 90%;
+    /* Full width for very small screens */
   }
 
   .home .intro .head .btns {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Reduce gap between buttons */
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 10px;
+    /* Reduce gap between buttons */
   }
 }
 
 /* Additional adjustments for very small screens (max-width: 320px) */
 @media only screen and (max-width: 320px) {
   .navigation .text p {
-    font-size: 16px; /* Further reduce font size */
+    font-size: 16px;
+    /* Further reduce font size */
   }
 
   .home .intro h1 {
-    font-size: 24px; /* Smaller heading */
+    font-size: 24px;
+    /* Smaller heading */
   }
 
   .home .intro span {
-    font-size: 30px; /* Smaller span text */
+    font-size: 30px;
+    /* Smaller span text */
   }
 
   .contact form {
-    padding: 15px; /* Reduce padding */
+    padding: 15px;
+    /* Reduce padding */
   }
 
   .contact form h2 {
-    font-size: 20px; /* Smaller heading */
+    font-size: 20px;
+    /* Smaller heading */
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  
+
   .navigation .text p {
-    font-size: 24px; /* Adjust font size for medium screens */
+    font-size: 24px;
+    /* Adjust font size for medium screens */
   }
 
   .navi-btns button {
-    font-size: 14px; /* Smaller button text */
+    font-size: 14px;
+    /* Smaller button text */
   }
 
   .home .intro h1 {
-    font-size: 40px; /* Smaller heading */
+    font-size: 40px;
+    /* Smaller heading */
   }
 
   .home .intro span {
-    font-size: 60px; /* Smaller span text */
+    font-size: 60px;
+    /* Smaller span text */
   }
 
   .about-container .about-img img {
-    width: 70vw; /* Adjust image size */
+    width: 70vw;
+    /* Adjust image size */
   }
 
   .project .project-container .card {
-    width: 30vw; /* Adjust card width */
+    width: 30vw;
+    /* Adjust card width */
   }
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   .navigation {
-    flex-direction: row; /* Stack navigation items */
-    height: auto; /* Allow height to adjust */
+    flex-direction: row;
+    /* Stack navigation items */
+    height: auto;
+    /* Allow height to adjust */
   }
 
   .navigation .navi-btns {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Space between buttons */
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 10px;
+    /* Space between buttons */
   }
 
-  .home .intro, .about-container, .skill-container, .project-container, .contact-container {
-    padding: 20px; /* Reduce padding */
+  .home .intro,
+  .about-container,
+  .skill-container,
+  .project-container,
+  .contact-container {
+    padding: 20px;
+    /* Reduce padding */
   }
 
   .home .img img {
-    height: 50vh; /* Adjust image height */
+    height: 50vh;
+    /* Adjust image height */
   }
 
   .contact form {
-    width: 90%; /* Full width for form */
+    width: 90%;
+    /* Full width for form */
   }
 
   .contact form button {
-    width: 100%; /* Full width for button */
+    width: 100%;
+    /* Full width for button */
   }
 
   .project .project-container .project-cards {
-    flex-direction: column; /* Stack cards vertically */
-    gap: 20px; /* Reduce gap between cards */
+    flex-direction: column;
+    /* Stack cards vertically */
+    gap: 20px;
+    /* Reduce gap between cards */
   }
 
   .project .project-container .card {
-    width: 80%; /* Adjust card width for smaller screens */
+    width: 80%;
+    /* Adjust card width for smaller screens */
   }
 }
 
 @media only screen and (max-width: 480px) {
-  
+
   .navigation .text p {
-    font-size: 20px; /* Further reduce font size */
+    font-size: 20px;
+    /* Further reduce font size */
   }
 
   .home .intro h1 {
-    font-size: 30px; /* Smaller heading */
+    font-size: 30px;
+    /* Smaller heading */
   }
 
   .home .intro span {
-    font-size: 40px; /* Smaller span text */
+    font-size: 40px;
+    /* Smaller span text */
   }
 
   .about-container .about-info h2 {
-    font-size: 18px; /* Smaller heading */
+    font-size: 18px;
+    /* Smaller heading */
   }
 
   .about-container .about-info p {
-    font-size: 14px; /* Smaller paragraph text */
+    font-size: 14px;
+    /* Smaller paragraph text */
   }
 
   .project .project-container .card {
-    width: 90%; /* Full width for very small screens */
+    width: 90%;
+    /* Full width for very small screens */
   }
 }

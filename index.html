@@ -284,19 +284,27 @@
         <!--Contact Section-->
         <div class="contact" id="contact">
             <div class="contact-container">
-                <form action="https://api.web3forms.com/submit" class="slide-up" method="POST">
-                    <h2 align="center">Get in Touch...</h2>
-                    <input type="hidden" name="access_key" value="c1984018-89fb-4639-99a0-cb71fa190d49">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter Your Mobile Number" required>
-                    <label for="mail">Email</label>
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Mail ID" required>
-                    <label for="message">Message</label>
-                    <textarea type="text" name="message" id="message" placeholder="Enter Your Message" required></textarea>
-                    <center><button type="submit">Submit</button></center>
+                <form id="contact-form" class="slide-up" method="POST">
+                <h2 align="center">Get in Touch...</h2>
+                <input type="hidden" name="access_key" value="c1984018-89fb-4639-99a0-cb71fa190d49">
+                <input type="hidden" name="subject" id="subject" value="">
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Your Mobile Number" required>
+
+                <label for="mail">Email</label>
+                <input type="email" name="email" id="mail" placeholder="Enter Your Mail ID" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
+
+                <center><button type="submit">Submit</button></center>
                 </form>
+
+                <div id="form-status" class="form-status"></div>
             </div>
         </div>
     </body>
@@ -380,5 +388,42 @@
             menu.style.display = 'none'
         }
 
+        document.getElementById('contact-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const formData = new FormData(form);
+        const name = formData.get('name');
+
+        // Set dynamic subject
+        const subject = `${name} sent you a message via the website`;
+        formData.set('subject', subject);
+
+        const status = document.getElementById('form-status');
+        status.textContent = 'Sending...';
+        status.style.display = 'block';
+
+        try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            status.textContent = '✅ Message sent successfully!';
+            form.reset();
+        } else {
+            status.textContent = `❌ Error: ${result.message}`;
+        }
+        } catch (error) {
+        status.textContent = '❌ An unexpected error occurred.';
+        }
+
+        setTimeout(() => {
+        status.style.display = 'none';
+        }, 5000);
+    });
     </script>
 </html>
